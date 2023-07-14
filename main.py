@@ -3,8 +3,8 @@ import shutil
 import yaml
 import re
 from types import SimpleNamespace
-
-from flask import Flask, request, render_template, jsonify, Markup
+from markupsafe import Markup
+from flask import Flask, request, render_template, jsonify
 from pygments import highlight
 from pygments.lexers import get_lexer_by_name
 from pygments.formatters import HtmlFormatter
